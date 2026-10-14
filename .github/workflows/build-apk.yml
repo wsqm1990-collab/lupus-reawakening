@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Unzip project
+      - name: Unzip project (all parts)
         run: |
-          Z=$(ls *.zip | head -n 1)
-          unzip -q -o "$Z" -d src
+          for Z in $(ls *.zip | sort); do unzip -q -o "$Z" -d src; done
           P=$(dirname "$(find src -name settings.gradle | head -n 1)")
           echo "PROJ=$P" >> $GITHUB_ENV
       - uses: actions/setup-java@v4

@@ -4,7 +4,7 @@ Beat 'em up 2D gótico-cyberpunk para Android. John "Lupus" Thorne luta em 3 for
 
 ## Como baixar o jogo
 Abra **Releases** e baixe o `LupusReawakening.apk` da versão mais nova ("Lupus Reawakening 9.x - APK N").
-A 9.2 instala por cima da 9.0 e da 9.1 e mantém o progresso.
+A 9.3 instala por cima da 9.0, da 9.1 e da 9.2 e mantém o progresso.
 
 ## Como o APK é feito
 As partes `LupusReawakening-zNN.zip` juntas formam o projeto Android. A cada envio, o GitHub Actions junta as partes, compila e publica o APK em Releases.
